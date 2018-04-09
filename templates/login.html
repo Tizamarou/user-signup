@@ -1,0 +1,70 @@
+{% extends 'base_page.html' %}
+
+{% block content %}
+<form method='POST'>
+    <h1>Join Mahmboh Now!</h1>
+    <table>
+        <tr>
+            <tbody>
+                <td>
+                    <label>Username:</label>
+                </td>
+                <td>
+                    <input type='text' name='username' value='{{username}}' />
+                </td>
+                <td>
+                    <span class='error'>
+                        {{error1}}
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email(optional):</label>
+                </td>
+                <td>
+                    <input type='text' name="email" value='{{email}}' />
+                </td>
+                <td>
+                    <span class='error'>
+                        {{error2}}
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable>Password:</lable>
+                </td>
+                <td>
+                    <input type='password' name='password'/>
+                </td>
+                <td>
+                    <span class='error'>
+                        {{error3}}
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <lable>Verify Password:</lable>
+                </td>
+                <td>
+                    <input type='password' name='verify'/>
+                </td>
+                <td>
+                    <span class='error'>
+                        {{error4}}
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</form>
+
+{% endblock %}
